@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banner_slides",
+  "info": {
+    "singularName": "banner-slide",
+    "pluralName": "banner-slides",
+    "displayName": "Banner Slide",
+    "description": "Slides del banner principal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "alt": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "link": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
